@@ -6,7 +6,7 @@ export default function ProductsIntroduction() {
       <h2 className="text-2xl font-bold mb-6 text-slate-700 text-center">
         產品介紹 Products Introduction
       </h2>
-      <div className="relative max-w-5xl mx-auto rounded overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' /* 16:9比例 */, height: 0 }}>
+      <div className="relative w-full max-w-5xl mx-auto rounded overflow-hidden shadow-lg" style={{ paddingTop: '56.25%', position: 'relative' }}>
         <iframe
           src="https://www.youtube.com/embed/v9ZGfdrbEjw"
           title="Products Introduction Video"

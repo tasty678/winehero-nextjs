@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
     return (
@@ -15,12 +16,12 @@ export default function Header() {
           <span className="sr-only">酒國英豪</span>
         </div>
         <nav className="space-x-6 text-sm font-medium">
-          <a href="#" className="hover:text-slate-400 transition">首頁</a>
-          <a href="#" className="hover:text-slate-400 transition">HB 產品介紹</a>
-          <a href="#" className="hover:text-slate-400 transition">HB 品牌通路</a>
-          <a href="#" className="hover:text-slate-400 transition">所有產品</a>
-          <a href="#" className="hover:text-slate-400 transition">最新消息</a>
-          <a href="#" className="hover:text-slate-400 transition">聯絡我們</a>
+          <Link href="/" className="hover:text-slate-400 transition">首頁</Link>
+          <Link href="/products-intro" className="hover:text-slate-400 transition">HB 產品介紹</Link>
+          <Link href="/stores" className="hover:text-slate-400 transition">HB 品牌通路</Link>
+          <Link href="/products" className="hover:text-slate-400 transition">所有產品</Link>
+          <Link href="/news" className="hover:text-slate-400 transition">最新消息</Link>
+          <Link href="/contact" className="hover:text-slate-400 transition">聯絡我們</Link>
         </nav>
       </header>
     );
