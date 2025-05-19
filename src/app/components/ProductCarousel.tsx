@@ -35,8 +35,8 @@ export default function ProductCarousel() {
   const productWidth = 320 + 24 // tailwind w-80 (320px) + gap-6 (24px)
 
   return (
-    <section className="px-8 py-20 bg-gray-100">
-        <h2 className="text-2xl font-bold mb-6 text-slate-500 text-center fade-in">
+    <section id="product-carousel" className="scroll-mt-[18vh] px-8 py-20 bg-stone-100">
+        <h2 className="text-base font-bold mb-6 text-stone-500 text-center fade-in">
             我們的產品 Our Products
         </h2>
         
@@ -44,7 +44,7 @@ export default function ProductCarousel() {
             <button
             onClick={handlePrev}
             disabled={startIndex === 0}
-            className="px-4 py-3 bg-gray-500 text-white rounded-[5vw] mx-12"
+            className="px-4 py-3 bg-stone-400 text-white rounded-[5vw] mx-12"
             >
             ←
             </button>
@@ -70,7 +70,7 @@ export default function ProductCarousel() {
                         className="object-cover rounded"
                         />
                     </div>
-                    <div className="font-semibold text-gray-500 text-center">
+                    <div className="font-semibold text-stone-500 text-center text-sm">
                         {product.name}
                     </div>
                 </div>
@@ -81,7 +81,7 @@ export default function ProductCarousel() {
             <button
             onClick={handleNext}
             disabled={startIndex + visibleCount >= products.length}
-            className="px-4 py-3 bg-gray-500 text-white rounded-[5vw] mx-12"
+            className="px-4 py-3 bg-stone-400 text-white rounded-[5vw] mx-12"
             >
             →
             </button>

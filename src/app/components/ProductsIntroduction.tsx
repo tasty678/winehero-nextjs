@@ -2,11 +2,11 @@
 
 export default function ProductsIntroduction() {
   return (
-    <section className="px-8 py-20 bg-gray-100 max-w-full mx-auto">
-      <h2 className="text-2xl font-bold mb-6 text-slate-700 text-center">
+    <section className="px-8 py-20 bg-stone-100 max-w-full mx-auto">
+      <h2 className="text-base font-bold mb-6 text-stone-500 text-center">
         產品介紹 Products Introduction
       </h2>
-      <div className="relative w-full max-w-5xl mx-auto rounded overflow-hidden shadow-lg" style={{ paddingTop: '56.25%', position: 'relative' }}>
+      <div className="relative w-full max-w-4xl mx-auto rounded overflow-hidden shadow-lg aspect-video">
         <iframe
           src="https://www.youtube.com/embed/v9ZGfdrbEjw"
           title="Products Introduction Video"

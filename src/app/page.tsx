@@ -3,10 +3,14 @@ import ProductCarousel from './components/ProductCarousel';
 import ProductsIntroduction from './components/ProductsIntroduction';
 import Welcome from './components/Welcome';
 import CategoryCarousel from './components/CategoryCarousel';
+import Footer from './components/Footer';
+import AgeBanner from './components/AgeBanner';
+import LatestNews from './components/LatestNews';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-zinc-800 text-gray-200">
+    <main>
+      {/* Header */}
       <Header />
       
 
@@ -22,9 +26,15 @@ export default function Home() {
       {/* 常見產品區塊 */}
       <CategoryCarousel />
 
-      {/* TODO: 最新消息區塊 */}
+      {/* 最新消息區塊 */}
+      <LatestNews />
+      
       {/* TODO: 服務內容區塊 */}
-      {/* TODO: Footer */}
+      
+      {/* Footer */}
+      <Footer />
+      <AgeBanner />
     </main>
+
   );
 }
