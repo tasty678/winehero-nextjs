@@ -6,6 +6,7 @@ import CategoryCarousel from './components/CategoryCarousel';
 import Footer from './components/Footer';
 import AgeBanner from './components/AgeBanner';
 import LatestNews from './components/LatestNews';
+import OurServices from './components/OurServices';
 
 export default function Home() {
   return (
@@ -29,8 +30,9 @@ export default function Home() {
       {/* 最新消息區塊 */}
       <LatestNews />
       
-      {/* TODO: 服務內容區塊 */}
-      
+      {/* 服務內容區塊 */}
+      <OurServices />
+
       {/* Footer */}
       <Footer />
       <AgeBanner />
