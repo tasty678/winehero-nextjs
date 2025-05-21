@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import ProductsDropdown from './ProductsDropdown';
 
 export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
@@ -43,7 +44,7 @@ export default function Header() {
         <Link href="/" className="hover:text-slate-400 transition">首頁</Link>
         <Link href="/products-intro" className="hover:text-slate-400 transition">HB 產品介紹</Link>
         <Link href="/stores" className="hover:text-slate-400 transition">HB 品牌通路</Link>
-        <Link href="/products" className="hover:text-slate-400 transition">所有產品</Link>
+        <ProductsDropdown />
         <Link href="/news" className="hover:text-slate-400 transition">最新消息</Link>
         <Link href="/contact" className="hover:text-slate-400 transition">聯絡我們</Link>
       </nav>
