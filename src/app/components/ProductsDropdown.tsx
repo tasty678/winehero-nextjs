@@ -1,6 +1,7 @@
 // components/ProductsDropdown.jsx
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 const mockCategories = [
   {
@@ -44,7 +45,7 @@ export default function ProductsDropdown() {
     <div className="inline-block relative"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
-    <span className="hover:text-slate-400 transition cursor-pointer">所有產品</span>
+    <span className="hover:text-stone-400 transition cursor-pointer">所有產品</span>
 
       {/* Dropdown */}
       {open && (
@@ -54,16 +55,17 @@ export default function ProductsDropdown() {
           <h2 className="text-stone-700 px-3 py-5 text-center text-base font-bold underline underline-offset-4">產品分類</h2>
             {mockCategories.map((parent) => (
               
-              <div
-                key={parent.id}
-                onMouseEnter={() => setActiveParentId(parent.id)}
-                className={`px-10 py-5 text-stone-500  hover:bg-stone-300 hover:text-stone-700 cursor-pointer ${
-                  activeParentId === parent.id ? "bg-stone-200" : ""
-                }`}
-              >
-                
-                {parent.name}
-              </div>
+                <Link
+                  key={parent.id}
+                  href={`/categories`} // 依你的路由結構調整
+                  onMouseEnter={() => setActiveParentId(parent.id)}
+                  className={`block px-10 py-5 text-stone-500 hover:bg-stone-300 hover:text-stone-700 cursor-pointer ${
+                    activeParentId === parent.id ? "bg-stone-200" : ""
+                  }`}
+                >
+                  {parent.name}
+                </Link>
+              
             ))}
           </div>
 

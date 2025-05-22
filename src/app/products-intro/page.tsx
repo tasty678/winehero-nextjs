@@ -1,3 +1,10 @@
+import Header from '../components/Header';
+
 export default function Page() {
-  return <div>這是產品介紹頁面</div>
+  return (
+    <main>
+      {/* Header */}
+      <Header />
+    </main>
+  );
 }

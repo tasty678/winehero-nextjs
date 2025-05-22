@@ -1,3 +1,10 @@
+import Header from '../components/Header';
+
 export default function Page() {
-  return <div>這是通路頁面</div>
+  return (
+    <main>
+      {/* Header */}
+      <Header />
+    </main>
+  );
 }
