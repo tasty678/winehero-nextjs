@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 type Product = {
   id: number;
@@ -44,9 +45,9 @@ export default function ProductCarousel() {
             <button
             onClick={handlePrev}
             disabled={startIndex === 0}
-            className="px-4 py-3 bg-stone-400 text-white rounded-[5vw] mx-12"
+            className="px-4 py-3 bg-stone-400 text-white rounded-[5vw] mx-12 hover:bg-stone-300"
             >
-            ←
+            <ChevronLeft className="w-5 h-5" />
             </button>
 
             <div className="relative w-full max-w-6xl overflow-hidden">
@@ -81,9 +82,9 @@ export default function ProductCarousel() {
             <button
             onClick={handleNext}
             disabled={startIndex + visibleCount >= products.length}
-            className="px-4 py-3 bg-stone-400 text-white rounded-[5vw] mx-12"
+            className="px-4 py-3 bg-stone-400 text-white rounded-[5vw] mx-12 hover:bg-stone-300"
             >
-            →
+            <ChevronRight className="w-5 h-5" />
             </button>
         </div>
         </section>
